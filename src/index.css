@@ -1,7 +1,17 @@
 body {
   font-family: Rubik, "Avenir Next", sans-serif;
   color: rgb(87, 87, 87);
-  background-color: white;
+  background-color: #F0F2F4;
+}
+.body-wrap {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100vh;
+  height: 100%;
+  /* border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; */
+  background: #fff;
 }
 h1, h2, h3 {
   color: black;
@@ -9,4 +19,133 @@ h1, h2, h3 {
 
 a {
   color: #65acef;
+}
+
+/* 공통 card css */
+.card {
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-deck {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card-body {
+  padding: 0;
+  padding-top: 16px;
+}
+
+.card-title {
+  margin-bottom: 4px;
+}
+
+.card-footer {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.main-title {
+  margin: 0 0 16px 8px;
+}
+
+/* header css */
+.header-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  /* background: red; */
+}
+
+.header-wrap .logo {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  /* background: yellow; */
+}
+
+.header-wrap .logo img {
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* banner css */
+.banner-wrap {
+  width: 100%;
+  max-width: 1140px;
+  height: 450px;
+  margin-bottom: 32px;
+  padding: 32px;
+  background-size: cover !important;
+  background: url('https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg');
+}
+
+.banner-wrap .banner-content {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-wrap .banner-content .banner-title {
+  color: #fff;
+}
+
+
+/* list-group-item css */
+.list-group-item {
+  margin-top: 16px;
+  padding: 0;
+  list-style: none !important;
+  border: none;
+}
+
+.list-group-item:nth-child(2) {
+  margin-top: 0;
+}
+
+.list-group-item a {
+  padding-right: 4px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* buy button */
+.buy-button {
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  background-color: #222;
+}
+
+.buy-button:hover {
+  background-color: #F85657;
+}
+
+.buy-button:active {
+  background-color:#d33535;
+}
+
+/* text-muted css */
+.text-muted {
+  color: #ddd !important;
+}
+
+/* text-truncate css */
+.text-truncate a {
+  color: #888 !important;
+  font-size: 12px;
+}
+
+.text-truncate a:hover {
+  text-decoration: underline;
 }

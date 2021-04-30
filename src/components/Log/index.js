@@ -129,7 +129,7 @@ export default class Log extends React.Component {
 
     return (
       <div className="row">
-        <div className="mb-3 ml-4">
+        {/* <div className="mb-3 ml-4">
           Filter orderbook:
           <div className="btn-group ml-4" role="group">
             <button type="button" className={"btn btn-outline-primary " + (sellSide ? "active" : "")} data-toggle="button" onClick={() => this.toggleSide(OrderSide.Sell)}>
@@ -139,8 +139,8 @@ export default class Log extends React.Component {
               Bids
             </button>
           </div>
-        </div>
-        <div className="mb-3 ml-4">
+        </div> */}
+        {/* <div className="mb-3 ml-4">
           <div className="btn-group" role="group">
             <button type="button" className={"btn btn-outline-secondary " + (onlyForMe ? "active" : "")} data-toggle="button" onClick={() => this.toggleForMe()}>
               For Me
@@ -154,7 +154,7 @@ export default class Log extends React.Component {
           <button type="button" className={"btn btn-outline-info " + (onlyBundles ? "active" : "")} data-toggle="button" onClick={() => this.toggleBundles()}>
             Bundles
           </button>
-        </div>
+        </div> */}
       </div>
     )
   }
@@ -170,6 +170,7 @@ export default class Log extends React.Component {
         {orders != null
         
           ? <React.Fragment>
+              <h5 className="main-title">main title</h5>
               <div className="card-deck">
                 {orders.map((order, i) => {
                   return <Order {...this.props} key={i} order={order}  />

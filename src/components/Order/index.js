@@ -12,8 +12,10 @@ import SalePrice from '../common/SalePrice';
 const Card = styled.div.attrs({ className: "card mx-2 mb-4" })`
   min-width: 200px;
   img {
-    height: 120px;
+    height: 100%;
+    max-height: 200px;
     max-width: 100%;
+    border-radius: 10px;
   }
   img.small {
     max-width: 50%;
@@ -76,7 +78,7 @@ export default class Order extends React.Component {
       <button
         disabled={creatingOrder}
         onClick={buyAsset}
-        className="btn btn-primary w-100">
+        className="btn w-100 buy-button">
         
         Buy{creatingOrder ? "ing" : ""} for <SalePrice order={order} />
 
@@ -150,7 +152,10 @@ export default class Order extends React.Component {
         
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
-            Offered by <Account account={makerAccount} />
+            <Account account={makerAccount} />
+          </li>
+          <li className="list-group-item">
+            <small className="text-muted">Posted {timeLabel}</small>
           </li>
           { errorMessage
             ? <div className="alert alert-warning mb-0" role="alert">
@@ -168,9 +173,8 @@ export default class Order extends React.Component {
               </li>
           }
         </ul>
-        <div className="card-footer">
-          <small className="text-muted">Posted {timeLabel}</small>
-        </div>
+        {/* <div className="card-footer">
+        </div> */}
       </Card>
     )
   }
