@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Log from '../Log'
+import '../../../src/index.css';
 import { OpenSeaPort, Network } from 'opensea-js';
 import { web3Provider, onNetworkUpdate, OPENSEA_JS_URL, GITHUB_URL } from '../../constants';
 
@@ -30,21 +31,23 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <a href={GITHUB_URL}>
-          <ImgRibbon src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
-        </a>
+      <div className="body-wrap">
         <Header>
-          <h1>
-            The Ship's Log
-          </h1>
-          <h6>
-            <a target="_blank" rel="noopener noreferrer" href={OPENSEA_JS_URL}>
-              <img alt="OpenSea logo" className="mr-2" src="/opensea-logo.png" />OpenSea.js
-            </a> example dapp
-          </h6>
+          <div className="header-wrap">
+            <div className="logo">
+              <img src="https://lh3.googleusercontent.com/zHKLnnABqo3Qewz_zuEsAyGjS2xNAffKmSRpiAjvwW4aogLFSx4KJ9JCZkKR5bEa8GRXHfaRBizv-MXPfYnDPkTBH76v-rvi_sZXnA=s250" alt="로고"></img>
+            </div>
+          </div>
         </Header>
         <main>
+          <div className="banner-wrap">
+            <div className="banner-content">
+              <div className="banner-title">
+                <h1>Background</h1>
+                <h4>sub text</h4>
+              </div>
+            </div>
+          </div>
           <Log
             seaport={this.seaport}
             accountAddress={this.state.accountAddress} />
@@ -55,24 +58,10 @@ export default class App extends React.Component {
 }
 
 const Header = styled.header`
-  border-bottom: 1px solid lightgrey;
-  padding: 10px;
-  text-align: center;
-  background-color: #f4f9fd;
-
-  h6 img {
-    width: 24px;
-  }
-`
-
-const ImgRibbon = styled.img`
-  width: 150px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-
-  @media(max-width: 600px) {
-    width: 80px;
-  }
+  width: 100%;
+  max-width: 1024px;
+  height: 54px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;;
+  background-color: #fff;
 `
