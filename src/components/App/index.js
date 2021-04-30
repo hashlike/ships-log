@@ -24,7 +24,7 @@ export default class App extends React.Component {
     this.web3 = this.seaport.web3
     this.web3.eth.getAccounts((err, res) => {
       this.setState({
-        // accountAddress: res[0]
+        accountAddress: res[0]
       })
     })
   }
