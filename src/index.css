@@ -5,10 +5,10 @@ body {
 }
 .body-wrap {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1024px;
   margin: 0 auto;
   height: 100vh;
-  height: 100%;
+  /* height: 100%; */
   /* border-left: 1px solid #ddd;
   border-right: 1px solid #ddd; */
   background: #fff;
@@ -59,7 +59,7 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1024px;
   height: 100%;
   margin: 0 auto;
   padding: 0 24px;
@@ -81,7 +81,7 @@ a {
 /* banner css */
 .banner-wrap {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1024px;
   height: 450px;
   margin-bottom: 32px;
   padding: 32px;
