@@ -59,7 +59,7 @@ export default class App extends React.Component {
 
 const Header = styled.header`
   width: 100%;
-  max-width: 1140px;
+  max-width: 1024px;
   height: 54px;
   margin: 0 auto;
   border-bottom: 1px solid #ddd;;
