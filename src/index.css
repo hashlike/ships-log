@@ -4,11 +4,12 @@ body {
   background-color: #F0F2F4;
 }
 .body-wrap {
+  position: relative;
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
   height: 100vh;
-  /* height: 100%; */
+  height: 100%;
   /* border-left: 1px solid #ddd;
   border-right: 1px solid #ddd; */
   background: #fff;
@@ -55,7 +56,13 @@ a {
 }
 
 /* header css */
+header {
+  position: fixed;
+  z-index: 999;
+}
+
 .header-wrap {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -64,6 +71,110 @@ a {
   margin: 0 auto;
   padding: 0 24px;
   /* background: red; */
+}
+
+/* hamburger menu css */
+.hamburger {
+  /* position: absolute; */
+  /* left: 24px; */
+  width: 54px;
+  height: 54px;
+  /* background: red; */
+}
+
+.hamburger input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger label {
+  /* margin-left: 8px; */
+  cursor: pointer;
+}
+
+.hamburger label span {
+  display: block;
+  width: 20px;
+  height: 1px;
+  margin: 4px auto;
+  border-radius: 10px;
+  background-color: #222;
+  transition: ease-in-out 0.3s;
+}
+
+.hamburger span:nth-child(1) {
+  margin-top: 22px;
+}
+
+/* .hamburger input[type="checkbox"]:checked + label span:nth-child(1) { */
+.hamburger input[type="checkbox"]:checked + label .fir-span {
+  transform: translateY(6px) rotate(45deg);
+  transition: ease-in-out 0.3s;
+}
+
+.hamburger input[type="checkbox"]:checked + label .sec-span {
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+}
+
+.hamburger input[type="checkbox"]:checked + label .thi-span {
+  transform: translateY(-4px) rotate(-45deg);
+  transition: ease-in-out 0.3s;
+}
+
+.slide-menu {
+  position: absolute;
+  top: 54px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  background-color: #fff;
+  /* border-radius: 10px; */
+  z-index: 3;
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); */
+  transition: ease-in-out 0.3s;
+}
+
+.slide-menu .fixed {
+  position: fixed;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.slide-menu ul {
+  height: 100%;
+  margin: 0;
+  margin-top: 32px;
+  padding-left: 0;
+  z-index: 3;
+  /* transition: ease-in-out 0.3s; */
+}
+
+.slide-menu ul li {
+  flex: 1 1 auto;
+  /* height: 70px; */
+  padding: 16px 0 16px 24px;
+  font-size: 20px;
+  text-align: left;
+  /* line-height: 70px; */
+  list-style: none;
+  /* border-bottom: 1px solid #ddd; */
+  cursor: pointer;
+  /* transition: ease-in-out 0.3s; */
+}
+
+.slide-menu ul li:last-child {
+  border: none;
+}
+
+.display-none {
+  display: none;
 }
 
 .header-wrap .logo {
@@ -76,6 +187,11 @@ a {
 .header-wrap .logo img {
   height: 100%;
   vertical-align: middle;
+}
+
+/* main css */
+main {
+  padding-top: 54px;
 }
 
 /* banner css */
