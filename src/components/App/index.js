@@ -34,12 +34,30 @@ export default class App extends React.Component {
       <div className="body-wrap">
         <Header>
           <div className="header-wrap">
+            <div className="hamburger">
+            <input type="checkbox" name="menu" id="menu" />
+              <label
+                  htmlFor="menu"
+              >
+                  <span className="fir-span" />
+                  <span className="sec-span" />
+                  <span className="thi-span" />
+              </label>
+            </div>
             <div className="logo">
               <img src="https://lh3.googleusercontent.com/zHKLnnABqo3Qewz_zuEsAyGjS2xNAffKmSRpiAjvwW4aogLFSx4KJ9JCZkKR5bEa8GRXHfaRBizv-MXPfYnDPkTBH76v-rvi_sZXnA=s250" alt="로고"></img>
             </div>
           </div>
         </Header>
         <main>
+          <div className="slide-menu">
+            <div className="fixed">
+              <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+              </ul>
+            </div>
+          </div>
           <div className="banner-wrap">
             <div className="banner-content">
               <div className="banner-title">
