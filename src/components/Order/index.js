@@ -78,7 +78,7 @@ export default class Order extends React.Component {
       <button
         disabled={creatingOrder}
         onClick={buyAsset}
-        className="btn w-100 buy-button">
+        className="btn w-100 buy-button text-truncate">
         
         Buy{creatingOrder ? "ing" : ""} for <SalePrice order={order} />
 
@@ -103,7 +103,7 @@ export default class Order extends React.Component {
       <button
         disabled={creatingOrder}
         onClick={sellAsset}
-        className={`btn btn-success w-100`}>
+        className={`btn w-100 sell-button text-truncate`}>
 
         Sell{creatingOrder ? "ing" : ""} for <SalePrice order={order} />
 
