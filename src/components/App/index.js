@@ -50,14 +50,6 @@ export default class App extends React.Component {
           </div>
         </Header>
         <main>
-          <div className="slide-menu">
-            <div className="fixed">
-              <ul>
-                <li>menu1</li>
-                <li>menu2</li>
-              </ul>
-            </div>
-          </div>
           <div className="banner-wrap">
             <div className="banner-content">
               <div className="banner-title">

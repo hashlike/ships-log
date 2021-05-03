@@ -28,8 +28,8 @@ export default class Log extends React.Component {
     const { accountAddress } = this.props
     const { orders, count } = await this.props.seaport.api.getOrders({
       maker: this.state.onlyByMe ? accountAddress : undefined,
-      owner: this.state.onlyForMe ? accountAddress : undefined,
-      // owner: "0x0db9dfce55a5c7d8b20e9373f4b3692ef25fd4cb",
+      // owner: this.state.onlyForMe ? accountAddress : undefined,
+      owner: "0x0db9dfce55a5c7d8b20e9373f4b3692ef25fd4cb",
       side: this.state.side,
       bundled: this.state.onlyBundles ? true : undefined
       // Possible query options:
