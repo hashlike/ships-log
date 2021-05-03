@@ -201,8 +201,9 @@ main {
   height: 450px;
   margin-bottom: 32px;
   padding: 32px;
-  background-size: cover !important;
-  background: url('https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg');
+  background-size: 100% !important;
+  /* background: url('https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg'); */
+  background: url('../src/components/App/assets/kstarlive-banner.png')
 }
 
 .banner-wrap .banner-content {
