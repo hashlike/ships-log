@@ -8,26 +8,30 @@ Check out a live version of this example [here](https://ships-log.herokuapp.com)
 
 ![Ship's Log Screenshot](https://storage.googleapis.com/opensea-static/opensea-ships-log/screenshot.png "Ship's Log Screenshot")
 
-### Instructions
+### ~~Instructions~~
 
-Execute `nvm use`, if you have Node Version Manager, or install Node.js version 8.11 to make sure dependencies work.
+~~Execute `nvm use`, if you have Node Version Manager, or install Node.js version 8.11 to make sure dependencies work.~~
 
-Then, to install dependencies:
+~~Then, to install dependencies:~~
 ```bash
 npm install
 ```
 
-To run the app on localhost:
+~~To run the app on localhost:~~
 
 ```bash
 npm start
 ```
 
-To minify and create a production build:
+~~To minify and create a production build:~~
 
 ```bash
 npm run build
 ```
+
+
+### Node version
+Execute `nvm use`, if you have Node Version Manager, or install Node.js version 10.15.3 to make sure dependencies work.
 
 ### The Code
 
